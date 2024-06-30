@@ -1,3 +1,32 @@
+:root {
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+}
+
+
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+    --bs-gutter-y: 1.5rem;
+}
+
+/* 글씨체: font-family: "Jost", sans-serif; */
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -74,19 +103,23 @@ body, html {
     color: #6c757d;
 }
 
+
+/* -----------------여기서부터 call to action ----------------------------- */
 .cta-section {
     position: relative;
     z-index: 2;
-    height: 300px;
+    height: 345.6px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
+    width: 100%;
+    font-family: "Jost", sans-serif;
 }
 
 .cta-overlay {
-    background: url('https://picsum.photos/id/237/536/354') no-repeat center center/cover;
+    background: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     position: absolute;
     top: 0;
@@ -97,39 +130,63 @@ body, html {
 }
 
 .cta-container {
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
     padding: 20px;
     border-radius: 8px;
-    width: 80%;
+    width: min(100%, 1320px);
     margin: 0 auto;
+    height: 105.6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.cta-container h2 {
-    font-size: 36px;
+.cta-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: min(100%, 960px);
+}
+.cta-container-text h2 {
+    font-size: 28px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
-.cta-container p {
+.cta-container-text p {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.cta-btn-section {
+    text-align: center;
+    flex: 0 0 auto;
+    width: 25%;
 }
 
 .cta-button {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 12px 40px;
     border-radius: 50px;
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
-    transition: background 0.3s ease;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    height: 24px;
+    text-align: center;
 }
 
 .cta-button:hover {
-    background: #0056b3;
+    background:  #47b2e4b3;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .services {
         flex-wrap: wrap;
     }
@@ -161,4 +218,4 @@ body, html {
     .cta-button {
         padding: 10px 20px;
     }
-}
+} */
