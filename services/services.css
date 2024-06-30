@@ -131,11 +131,11 @@ body, html {
 
 
 .services-row {
-    flex-wrap: no-wrap;
     margin-top: calc(-1* var(--bs-gutter-y));
     margin-right: calc(-.5* var(--bs-gutter-x));
     margin-left: calc(-.5* var(--bs-gutter-x));
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     box-sizing: border-box;
     justify-content: center;
@@ -157,6 +157,15 @@ body, html {
     transition: all ease-in-out 0.4s;
 }
 
+
+.services-box:hover {
+    transform: translateY(-10px);
+}
+  
+.services-box:hover h4 {
+    color: var(--accent-color);
+}
+
 .services-box-icon {
     display: flex;
     flex-direction: row;
@@ -175,6 +184,7 @@ body, html {
     text-align: left;
     text-decoration: none;
     color: var(--heading-color);
+    transition: ease-in-out 0.3s;
 }
 
 
@@ -281,6 +291,37 @@ body, html {
 .cta-button:hover {
     background:  #47b2e4b3;
 }
+
+/* ------------------------------------일단 1320부터 맞춘 다음에 다시 하기-------------------------------- */
+/* @media (max-width: 1400px) {
+    .services-box-container {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-box-container {
+        max-width: 1140px;
+    }
+    .services-row {
+        flex-wrap: nowrap;
+    }
+    ------------cta 반응형 완성!----------
+    .cta-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .cta-container-text {
+        align-items: center;
+    } 
+    .cta-container-text p {
+        text-align: center;
+    }
+    .cta-btn-section {
+        width: 100%;
+    }
+} */
 
 /* @media (max-width: 768px) {
     .services {
