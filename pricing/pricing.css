@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pricing {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.pricing .section-title h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.pricing .section-title p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+.pricing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.pricing-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pricing-item h4 {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.pricing-item h4 sup {
+    font-size: 20px;
+}
+
+.pricing-item h4 span {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.pricing-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.pricing-item ul li {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.pricing-item ul li.na {
+    color: #dcdcdc;
+    text-decoration: line-through;
+}
+
+.pricing-item ul li i {
+    margin-right: 10px;
+}
+
+.buy-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.buy-btn:hover {
+    background-color: #0056b3;
+}
+
+.featured {
+    border: 2px solid #007bff;
+}
