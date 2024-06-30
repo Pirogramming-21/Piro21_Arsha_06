@@ -22,6 +22,7 @@
     --bs-breakpoint-xl: 1200px;
     --bs-breakpoint-xxl: 1400px;
     --bs-gutter-y: 1.5rem;
+    --bs-gutter-x: 1.6rem;
 }
 
 /* 글씨체: font-family: "Jost", sans-serif; */
@@ -50,26 +51,77 @@ body, html {
 .services-section {
     position: relative;
     z-index: 2;
-    background: #fff;
-    padding: 50px 0;
+    background-color: #f5f6f8;
+    padding: 0 0 10px 0; 
 }
 
-.services-container {
-    width: 80%;
-    margin: 0 auto;
+/* ---------------------------------------------------------------------- */
+.services-section-title {
     text-align: center;
+    padding:0;
+    position: relative;
+    margin-bottom: 48px;
+    margin-top: 64px;
 }
 
-.section-title h2 {
-    font-size: 36px;
+.services-section-title h2 {
+    font-size: 32px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--heading-color);
+    font-family:  "Jost", sans-serif;
+    margin-top: 0;
+}
+.services-section-title h2:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
 }
 
-.section-title p {
+.services-section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.services-section-title p {
     font-size: 16px;
     color: #6c757d;
 }
+
+/* ------------------------------------------------------------------------------- */
+.services-container {
+    padding: 0 12px 60px 12px;
+}
+
+
+.services-box-container {
+    margin: 0 auto;
+    text-align: center;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    display: flex;
+    justify-content: center;
+    font-family: "Jost", sans-serif;
+    width: min(100%, 1320px);
+}
+
 
 .services {
     display: flex;
@@ -77,30 +129,61 @@ body, html {
     margin-top: 40px;
 }
 
-.service-box {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    width: 23%;
-    text-align: center;
+
+.services-row {
+    flex-wrap: no-wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
-.service-box i {
+.services-col-1 {
+    top: 0;
+    height: 100%;
+    flex: 0 0 auto;
+    width: 25%;
+    margin-top: 24px;
+    padding: 0 12px;
+
+}
+.services-box {
+    background-color: var(--surface-color);
+    box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    transition: all ease-in-out 0.4s;
+}
+
+.services-box-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.services-box i {
+    color: var(--accent-color);
     font-size: 36px;
-    color: #007bff;
-    margin-bottom: 10px;
+    transition: 0.3s;
 }
 
-.service-box h3 {
-    font-size: 24px;
+.services-box h4 {
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--heading-color);
 }
 
-.service-box p {
+
+
+.services-box p {
+    line-height: 24px;
     font-size: 14px;
-    color: #6c757d;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 
@@ -116,6 +199,17 @@ body, html {
     color: #fff;
     width: 100%;
     font-family: "Jost", sans-serif;
+}
+
+.cta-background {
+    content: "";
+    background: color-mix(in srgb, #37517e, transparent 35%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display:block; 
 }
 
 .cta-overlay {
@@ -139,6 +233,7 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .cta-container-text {
@@ -150,7 +245,8 @@ body, html {
 .cta-container-text h2 {
     font-size: 28px;
     font-weight: 700;
-    margin-bottom: 0;
+    margin-bottom: 8px;
+    margin-top: 0;
 }
 
 .cta-container-text p {
