@@ -1,0 +1,198 @@
+.why-light-background {
+    --background-color: #f5f6f8;
+    --surface-color: #ffffff;
+}
+
+.why-container {
+    --bs-gutter-x: 6.5rem;
+    --bs-gutter-y: 0rem;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* 1);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Setup row */
+.why-us .why-us-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    --bs-gutter-x: 19rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-1.5* var(--bs-gutter-x));
+    margin-left: calc(-0.2* var(--bs-gutter-x));
+}
+
+/* Setup col */
+.why-col {
+    width: 49%;
+    align-items: center;
+}
+
+
+.why-us .bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.why-us .bottom-content img {
+    width: 50%;
+    height: auto;
+    max-width: 600px;
+    margin: 0;
+    display: block;
+}
+
+/* content */
+.why-us .why-content h3 {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.why-us .why-content strong {
+    font-weight: bolder;
+}
+
+.why-us .why-content p {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin-bottom: 1rem;
+    font-family: var(--heading-font);
+    font-size: 16px;
+}
+
+/* container */
+
+.why-us .why-container .why-item h3 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-size: 17px;
+}
+
+.why-us .why-container .why-item h3:hover {
+    color: var(--accent-color);
+}
+
+.why-us .why-container .why-item h3 span {
+    color: var(--accent-color);
+    padding-right: 5px;
+    font-weight: 600;
+}
+
+.why-us .why-container .why-item {
+    background-color: var(--surface-color);
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.why-us .why-container .why-item .why-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.why-us .why-container .why-item .why-toggle:hover {
+    color: var(--accent-color);
+}
+
+.why-us .bii-chevron-why::before {
+    content: "\f285";
+}
+
+.why-us .bii::before,
+[class^="bii-"]::before,
+[class*=" bii-"]::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* click toggle*/
+.why-checkbox {
+    display: none;
+}
+
+.why-checkbox:checked+.why-label .why-toggle {
+    transform: rotate(90deg);
+    color: var(--accent-color);
+}
+
+.why-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.why-checkbox:checked+.why-label h3 {
+    color: var(--accent-color);
+}
+
+.why-faq-content {
+    display: none;
+}
+
+.why-checkbox:checked+.why-label .why-faq-content {
+    display: block;
+}
+
+.why-us .why-content-bottom p {
+    display: none;
+    color: black;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.why-checkbox:checked+.why-label .why-faq-content p {
+    display: block;
+    max-height: 1000px;
+    opacity: 1;
+}
+
+/* animation */
+.why-container {
+    animation: up-scroll-animation 4s ease-in-out;
+}
+
+@keyframes up-scroll-animation {
+    0% {
+        transform: translateY(50px);
+        /* �쒖옉 �꾩튂: �꾨옒�먯꽌 �꾨줈 50px �대룞 */
+        opacity: 0;
+        /* �쒖옉 �� �щ챸�� */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* 理쒖쥌 �꾩튂: �먮옒 �꾩튂濡� 蹂듦� */
+        opacity: 1;
+        /* 理쒖쥌 �� �щ챸�� */
+    }
+}

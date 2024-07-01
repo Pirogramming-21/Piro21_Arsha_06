@@ -1,0 +1,385 @@
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+@import "./reset.css";
+
+@media (max-width: 768px) {
+    .navigate .download {
+        padding: 0 10px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
+@media (min-width: 768px) {
+    .header_currnet {
+        padding-left: 0;
+        margin-left: auto;
+    }
+}
+@media (max-width: 1199px) {
+    .section_menu {
+        padding: 0;
+        z-index: 9997;
+    }
+}
+@media (min-width: 1200px) {
+    .section_menu {
+        padding: 0;
+    }
+}
+
+#header_header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 32px;
+    background: #023b6d;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo{
+    height: 25px;
+    margin: 0px 0px 0px 10px;
+}
+.preview-devices{
+    margin-top: 2px;
+}
+
+.header_current__template{
+    position: relative;
+    margin-top: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    color: black;
+    text-align: center;
+}
+.header_currnet{
+    margin-top: -2px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-left: -10px;
+    text-align: center;
+    margin-left: 1000px;
+    font-size: large;
+    font-weight: 700;
+}
+.header_current__icon {
+    width: 22px;
+    height: 22px;
+    margin: 0px 15px;
+    color:white;
+
+}
+
+.navigate {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navigate__download {
+    display: flex;
+    font-weight: bold;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 166, 235);
+    color:rgb(255,255,255);
+    text-decoration:rgb(255, 255, 255) solid ;
+    padding: 0px 16px 0px 16px;
+    margin:0px 0px 0px 12px;
+    height: 32px;
+    width: 140.6px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+.navigate .navigate__download span {
+    padding-left: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    color:white;
+
+}
+
+.navigate__more {
+    transition: .3s;
+    color: rgba(255, 255, 255, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.header__container {
+    background-color:#37517e;
+    color:white;
+    display: block;
+    position: fixed;
+    top:32px;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 15px 0px;
+    height: 36px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    align-items: center;
+    border-bottom: var(--main-border);
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.header__container__item{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 12px;
+    margin: 0px 163.5px;
+}
+.header__sitename{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.section_start__box{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: #47b2e4;
+    font-size: 15px;
+    font-weight: 320;
+    letter-spacing: .05rem;
+    width: 100px;
+    padding: 6px 15px;
+    margin: 0 15px 0 0;
+    height: 26px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+/*.scetion_meue__icon{
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    margin: 0 auto;
+    color: white;
+}
+.section_menu__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
+.section_menu{
+    font-size: 15px;
+}
+.section_menu ul{
+    text-align: center;
+
+}
+.section_menu li{
+    display: inline-block;
+}
+
+#main_container {
+    width: 100%;
+    height: 79.5vh;
+    background: url('./hero-bg.jpg') top center;
+    background-size: cover;
+    position: relative;
+    top: 0px;
+    z-index: -2;
+  }
+
+  
+  #main_container .main_container {
+    position: relative;
+    text-align: center;
+    background-color:#37517e;
+    z-index: -1;
+    padding: 140px 0px 60px 0px;
+    justify-content:space-around;
+    display: flex;
+    flex-direction: row;
+    height: 580.797px;
+  }
+
+  .main_welcome{
+    width: 526.73px;
+    height: 500px;
+  }
+.main_container_intro{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    color:white;
+    font: 48px Jost, sans-serif;
+    box-sizing: border-box;
+    z-index: 99999;
+    width: 616px;
+    text-align: left;
+    justify-content: center;
+}
+.main_container_intro h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+
+}
+.main_container_intro p{
+
+    color: 
+    color-mix(in srgb, white, transparent 30%);
+        margin: 5px 0 30px 0;
+        font-size: 22px;
+        line-height: 1.3;
+        font-weight: 600;
+}
+<<<<<<< HEAD
+.header{
+    
+}
+=======
+.main_container__opt{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    gap:1px;
+    justify-content: flex-start;
+}
+.main_container .WatchVideo{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+
+    gap:7px;
+    
+}
+.WatchVideo h1{ 
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+.WatchVideo span{
+    display: flex;
+    position: relative;
+    font-size: 41px;
+    font-weight: 300;
+    margin-left: 25px;
+}
+.main_start__box{
+    color: white;
+    background: #47b2e4;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: flex;
+    width: 93.37px;
+    height: 24.5px;
+    padding: 10px 28px 12px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    text-align: center;
+}
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.main_welcome {
+    max-width: 100%;
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+.main_clien__container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 72.5px;
+    padding: 12px 0px;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+.main_client__logocontainer{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 52.5px;
+    padding: 12px 0px;
+    align-items: center;
+}
+.main_secon_logocontainer{
+    margin:0px 62px;
+    padding: 0px 12px;
+}
+
+/* 클라이언트 로고 슬라이드쇼 */
+.client-logos {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    gap: 62px;
+    position: relative;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+
+.client-logo {
+    flex: 0 0 16.666%; /* 6개의 이미지를 나누기 위해 16.666%로 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logo img {
+    max-width: 100%;
+    height: 39px;
+    display: block;
+    padding:0px 10px;
+}
+
+/* Animation to step through logos continuously */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.client-logos {
+    animation: slide 12s steps(12) infinite;
+}
+>>>>>>> HwangDaye/mainpage
