@@ -112,7 +112,7 @@
 
 /* animation */
 .skills-container {
-    animation: up-scroll-animation 6s ease-in-out;
+    animation: up-scroll-animation 4s ease-in-out;
 }
 
 @keyframes up-scroll-animation {

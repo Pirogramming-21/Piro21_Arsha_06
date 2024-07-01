@@ -164,7 +164,7 @@ section,
 }
 
 .about-container {
-    animation: up-scroll-animation 3s ease-in-out;
+    animation: up-scroll-animation 2s ease-in-out;
 }
 
 @keyframes up-scroll-animation {

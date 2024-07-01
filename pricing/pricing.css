@@ -255,3 +255,23 @@ section,
         margin: 0 auto 30px auto;
     }
 }
+
+.pricing {
+    animation: up-scroll-animation 1s ease-in-out;
+}
+
+@keyframes up-scroll-animation {
+    0% {
+        transform: translateY(50px);
+        /* 시작 위치: 아래에서 위로 50px 이동 */
+        opacity: 0;
+        /* 시작 시 투명도 */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* 최종 위치: 원래 위치로 복귀 */
+        opacity: 1;
+        /* 최종 시 투명도 */
+    }
+}
