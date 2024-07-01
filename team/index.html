@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Filter</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+  /* 기본 스타일 */
+.team-body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* 이미지 간격을 20px로 설정 */
+    margin-top: 20px;
+    margin-left: auto; /* 왼쪽 여백 자동 설정 */
+    margin-right: auto; /* 오른쪽 여백 자동 설정 */
+    max-width: 1200px; /* 최대 너비 설정 */
+}
+
+.team-item {
+    display: flex;
+    align-items: center;
+    height: 240px;
+    width: calc(50% - 10px); /* 각 이미지의 너비 설정 */
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* 변환(transform)에 대한 0.3초의 ease 인터랙션 효과 */
+  
+}
+.team-item:hover {
+    transform: translateY(-5px); /* 마우스 호버 시 위로 3px 이동하는 변환 */
+}
+
+.team-member-info{
+    padding-left: 10px;
+
+    display: flex;
+    align-items: center;
+
+}
+.team-item img {
+      border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.team-right{
+    text-align: left;
+}
+
+.team-social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+
+.team-social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 35px; /* 아이콘 영역의 크기 */
+    height: 35px; /* 아이콘 영역의 크기 */
+    background-color: rgb(243, 239, 239); /* 동그라미 배경색 */
+    border-radius: 50%; /* 동그라미 모양 */
+    text-align: center;
+    line-height: 40px; /* 수직 정렬을 위한 높이와 같은 값을 줍니다 */
+    margin-right: 10px; /* 각 아이콘 사이의 간격 */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 배경색과 변환에 대한 0.3초의 ease 인터랙션 효과 */
+
+}
+
+.team-social-icons a i {
+    color: black; /* 아이콘 색상 */
+    font-size: 18px; /* 아이콘 크기 */
+}
+
+.team-social-icons a:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 35px; /* 아이콘 영역의 크기 */
+    height: 35px; /* 아이콘 영역의 크기 */
+    background-color: #47b2e4; /* 동그라미 배경색 */
+    border-radius: 50%; /* 동그라미 모양 */
+    text-align: center;
+    line-height: 40px; /* 수직 정렬을 위한 높이와 같은 값을 줍니다 */
+    margin-right: 10px; /* 각 아이콘 사이의 간격 */
+    transition: transform 0.3s ease; /* 변환(transform)에 대한 0.3초의 ease 인터랙션 효과 */
+    i{
+        color: white;
+    }
+}
+
+.contact-section-title {
+    text-align: center;
+    padding-bottom:20px;
+    position: relative;
+}
+
+.contact-section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--heading-color);
+    font-family:  "Jost", sans-serif;
+}
+.contact-section-title h2:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.contact-section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #47b2e4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.section-title p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.team-h3 {
+    color: #37517E;
+}
+
+
+.team-hr{
+
+    border: none; /* 기본 테두리 제거 */
+    border-top: 0.5px solid lightgray; /* 위쪽 테두리에 색상과 두께 설정 */
+    width: 13%; /* 수평선의 길이 설정 */
+    margin: 20px 0; /* 위아래 여백 설정, 좌우 여백 제거 */
+ }
+
+
+    </style>
+</head>
+<body>
+    <div class="team-body">
+    <div class="contact-section-title">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
+
+
+    <!-- 포트폴리오 이미지들 -->
+    <div class="team">
+        <div class="team-item" >
+            <div class="team-member-info">
+                <div class="team-left">
+                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg" alt="William Anderson">
+                </div>
+                <div class="team-right">
+                    <h3 class="team-h3">Walter White</h3>
+                    <p class="team-position">Chief Executive Officer</p>
+                    <hr class="team-hr">
+                    <p class="team-description">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                    <div class="team-social-icons">
+                        <a href="#"><i class="bi bi-twitter-x" ></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="team-item" >
+            <div class="team-member-info">
+                <div class="team-left">
+                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-2.jpg" alt="William Anderson">
+                </div>
+                <div class="team-right">
+                    <h3 class="team-h3">Sarah Jhonson</h3>
+                    <p class="team-position">Product Manager</p>
+                    <hr class="team-hr">
+                    <p class="team-description">Aut maiores voluptates amet et quis praesentium qui senda para
+                    </p>
+                    <div class="team-social-icons">
+                        <a href="#"><i class="bi bi-twitter-x" ></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="team-item" >
+            <div class="team-member-info">
+                <div class="team-left">
+                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-3.jpg" alt="William Anderson">
+                </div>
+                <div class="team-right">
+                    <h3 class="team-h3">William Anderson</h3>
+                    <p class="team-position">CTO</p>
+                    <hr class="team-hr">
+                    <p class="team-description">Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                    <div class="team-social-icons">
+                        <a href="#"><i class="bi bi-twitter-x" ></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="team-item" >
+            <div class="team-member-info">
+                <div class="team-left">
+                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-4.jpg" alt="William Anderson">
+                </div>
+                <div class="team-right">
+                    <h3 class="team-h3">Amanda Jepson</h3>
+                    <p class="team-position">Accountant</p>
+                    <hr class="team-hr">
+                    <p class="team-description">Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                    <div class="team-social-icons">
+                        <a href="#"><i class="bi bi-twitter-x" ></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

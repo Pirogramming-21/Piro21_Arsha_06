@@ -1,14 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Filter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel = "stylesheet" href ="portfolio.css">
+ 
 </head>
+
 <body>
+    <div class="portfolio-body">
+        <div class="contact-section-title">
+            <h2>Team</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+
+    <!-- 필터 버튼들 -->
+    <input type="radio" id="all" class="portfolio-filter" name="filter"  checked>
+    <label for="all" class="portfolio-filter-button">All</label>
+
+    <input type="radio" id="app" name="filter" class="portfolio-filter">
+    <label for="app" class="portfolio-filter-button">App</label>
+
+    <input type="radio" id="card" name="filter" class="portfolio-filter">
+    <label for="card" class="portfolio-filter-button">Card</label>
+
+    <input type="radio" id="web" name="filter" class="portfolio-filter">
+    <label for="web" class="portfolio-filter-button">Web</label>
+
+    <!-- 포트폴리오 이미지들 -->
+    <div class="portfolio">
+        <div class="portfolio-item app">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
+                alt="App Project 1">
+
+            <div class="portfolio-title">
+                <div class="portfolio-title-more">
+                    <div class="portfolio-title-more-text">
+                        <span class="portfolio-span1">App1</span>
+                        <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+
+                    </div>
+                    <div>
+                        <i class="bi bi-zoom-in portfolio-icon"></i>
+                        <i class="bi bi-link-45deg portfolio-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item card">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+                alt="Card Design 1">
+       
+                <div class="portfolio-title">
+                    <div class="portfolio-title-more">
+                        <div class="portfolio-title-more-text">
+                            <span class="portfolio-span1">Product1</span>
+                            <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
     
+                        </div>
+                        <div>
+                            <i class="bi bi-zoom-in portfolio-icon"></i>
+                            <i class="bi bi-link-45deg portfolio-icon"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="portfolio-item web">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+                alt="Web Development 2">
+        
+                <div class="portfolio-title">
+                    <div class="portfolio-title-more">
+                        <div class="portfolio-title-more-text">
+                            <span class="portfolio-span1">Branding1</span>
+                            <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+    
+                        </div>
+                        <div>
+                            <i class="bi bi-zoom-in portfolio-icon"></i>
+                            <i class="bi bi-link-45deg portfolio-icon"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="portfolio-item web">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
+                alt="Web Development 1">
+       
+                <div class="portfolio-title">
+                    <div class="portfolio-title-more">
+                        <div class="portfolio-title-more-text">
+                            <span class="portfolio-span1">Branding2</span>
+                            <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+    
+                        </div>
+                        <div>
+                            <i class="bi bi-zoom-in portfolio-icon"></i>
+                            <i class="bi bi-link-45deg portfolio-icon"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
 
 
+        <div class="portfolio-item app">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
+                alt="App Project 2">
+
+                <div class="portfolio-title">
+                    <div class="portfolio-title-more">
+                        <div class="portfolio-title-more-text">
+                            <span class="portfolio-span1">Product2</span>
+                            <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
     
+                        </div>
+                        <div>
+                            <i class="bi bi-zoom-in portfolio-icon"></i>
+                            <i class="bi bi-link-45deg portfolio-icon"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="portfolio-item card">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
+                alt="Card Design 2">
+      
+                <div class="portfolio-title">
+                    <div class="portfolio-title-more">
+                        <div class="portfolio-title-more-text">
+                            <span class="portfolio-span1">App2</span>
+                            <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+    
+                        </div>
+                        <div>
+                            <i class="bi bi-zoom-in portfolio-icon"></i>
+                            <i class="bi bi-link-45deg portfolio-icon"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="portfolio-item card">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
+                alt="Card Design 3">
+
+                <div class="portfolio-title">
+                    <div class="portfolio-title-more">
+                        <div class="portfolio-title-more-text">
+                            <span class="portfolio-span1">Product3</span>
+                            <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+    
+                        </div>
+                        <div>
+                            <i class="bi bi-zoom-in portfolio-icon"></i>
+                            <i class="bi bi-link-45deg portfolio-icon"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="portfolio-item app">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
+                alt="App Project 3">
+
+                <div class="portfolio-title">
+                    <div class="portfolio-title-more">
+                        <div class="portfolio-title-more-text">
+                            <span class="portfolio-span1">app3</span>
+                            <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+    
+                        </div>
+                        <div>
+                            <i class="bi bi-zoom-in portfolio-icon"></i>
+                            <i class="bi bi-link-45deg portfolio-icon"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+        <div class="portfolio-item web">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                alt="Web Development 3">
+  
+                <div class="portfolio-title">
+                    <div class="portfolio-title-more">
+                        <div class="portfolio-title-more-text">
+                            <span class="portfolio-span1">Branding3</span>
+                            <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+    
+                        </div>
+                        <div>
+                            <i class="bi bi-zoom-in portfolio-icon"></i>
+                            <i class="bi bi-link-45deg portfolio-icon"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
 </body>
+
 </html>
