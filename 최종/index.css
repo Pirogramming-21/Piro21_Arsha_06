@@ -1,0 +1,870 @@
+:root {
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+}
+
+
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+    --bs-gutter-y: 1.5rem;
+    --bs-gutter-x: 1.6rem;
+}
+
+/* 글씨체: font-family: "Jost", sans-serif; */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+}
+.white {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+.services-main {
+    display: flex;
+    flex-direction: column;
+}
+.services-section {
+    position: relative;
+    z-index: 2;
+    background-color: #f5f6f8;
+    padding: 0 0 10px 0; 
+}
+
+/* ---------------------------------------------------------------------- */
+.services-section-title {
+    text-align: center;
+    padding:0;
+    position: relative;
+    margin-bottom: 48px;
+    margin-top: 64px;
+}
+
+.services-section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--heading-color);
+    font-family:  "Jost", sans-serif;
+    margin-top: 0;
+}
+.services-section-title h2:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.services-section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.services-section-title p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+/* ------------------------------------------------------------------------------- */
+.services-container {
+    padding: 0 12px 60px 12px;
+}
+
+
+.services-box-container {
+    margin: 0 auto;
+    text-align: center;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    display: flex;
+    justify-content: center;
+    font-family: "Jost", sans-serif;
+    width: min(100%, 1320px);
+}
+
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+.services-row {
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.services-col-1 {
+    top: 0;
+    height: 100%;
+    flex: 0 0 auto;
+    width: 25%;
+    margin-top: 24px;
+    padding: 0 12px;
+
+}
+.services-box {
+    background-color: var(--surface-color);
+    box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    transition: all ease-in-out 0.4s;
+}
+
+
+.services-box:hover {
+    transform: translateY(-10px);
+}
+  
+.services-box:hover h4 {
+    color: var(--accent-color);
+}
+
+.services-box-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.services-box i {
+    color: var(--accent-color);
+    font-size: 36px;
+    transition: 0.3s;
+}
+
+.services-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--heading-color);
+    transition: ease-in-out 0.3s;
+}
+
+
+
+.services-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+
+/* -----------------여기서부터 call to action ----------------------------- */
+.cta-section {
+    position: relative;
+    z-index: 2;
+    height: 345.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    font-family: "Jost", sans-serif;
+}
+
+.cta-background {
+    content: "";
+    background: color-mix(in srgb, #37517e, transparent 35%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display:block; 
+}
+
+.cta-overlay {
+    background: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.cta-container {
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    width: min(100%, 1320px);
+    margin: 0 auto;
+    height: 105.6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.cta-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: min(100%, 960px);
+}
+.cta-container-text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.cta-container-text p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.cta-btn-section {
+    text-align: center;
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.cta-button {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    height: 24px;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background:  #47b2e4b3;
+}
+
+/* -------------------------------------------------여기서부터 footer 시작--------------------------------------- */
+
+
+.footer-top-container {
+    margin: 0 auto;
+    padding: 20px 0;
+    padding-right: calc(1.5rem* .5);
+    padding-left: calc(1.5rem* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.join-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.join-title h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    color: #37517e;
+    padding-bottom: 12px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    font-family: "Jost", sans-serif;
+}
+
+.join-title p {
+    font-size: 16px;
+    color: #444444;
+}
+
+#footer-top {
+    background: #f1f1f1;
+    padding: 40px 0;
+}
+
+.footer-top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-top-center {
+    flex: 0 0 auto;
+    width: 50%;
+    padding-right: calc(1.5rem* .5);
+    padding-left: calc(1.5rem* .5);
+}
+
+.footer-subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    height: 42.6px;
+    background-color: white;
+    /* max-width: 636px; */
+    /* transition: 0.3s; */
+}
+
+
+.footer-subscribe input[type="email"] {
+    padding: 4px;
+    width: 100%;
+    border: 0;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+}
+
+.footer-subscribe button {
+    padding: 0px 20px;
+    border: 0;
+    border-radius: 50px;
+    background: var(--accent-color);
+    margin: -7px -8px -7px 0;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    height: 100%;
+    /* transition: background 0.3s ease; */
+}
+
+.footer-subscribe button:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+
+/* ------------------------------footer-bottom 시작------------------------------------- */
+
+#footer-bottom {
+    width: 100%;
+    font-family: "Jost", sans-serif;
+}
+
+.footer-container {
+    background: white;
+    padding: 40px 0;
+    padding-top: 50px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    padding: 24px 12px;
+    margin-right: 62px;
+    margin-left: 62px;
+    width: 1320px;
+}
+
+.footer-col-1 {
+    width: 33.33333333%;
+}
+
+
+.footer-col-1 >h3 {
+    color: var(--heading-color);
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+}
+
+.footer-col-1 > h4, 
+.footer-col-2 > h4 {
+    color: var(--heading-color);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+
+}
+
+.footer-col-1-p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.footer-col-1-p > p{
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.footer-col-2 {
+    width: 16.66666667%;
+}
+
+.footer-col-2 ul {
+    padding-left: 0;
+}
+.footer-col-2 ul li {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col-2 ul li {
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+}
+
+#footer-bottom ul li i {
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+#footer-bottom ul li a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#footer-bottom ul li a:hover {
+    color: var(--accent-color);
+}
+
+
+/* 여기서부터 소셜미디어 링크 */
+.footer-social-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+.footer-social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer-social-links a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* 여기서부터 copyright */
+
+.footer-copyright {
+    padding-top: 24px;
+    height: 100px;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    margin-top: 24px;
+    margin-right: 62px;
+    margin-left: 62px;
+}
+
+.footer-copyright p {
+    margin: 5px 0;
+    color: #6c757d;
+    text-align: center;
+}
+
+.footer-copyright a {
+    color:  var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-copyright a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+----------------------------------------------footer 끝 -------------------------------
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: #f9f9f9; /* 요소 레이어드되도록 흰색 배경 추가 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+#contact {
+    padding: 60px 0;
+}
+
+/* .contact-container {
+    margin: 0 auto;
+    padding: 20px 0;
+    background: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.contact-section-title {
+    text-align: center;
+    padding-bottom:20px;
+    position: relative;
+}
+
+.contact-section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--heading-color);
+    font-family:  "Jost", sans-serif;
+}
+.contact-section-title h2:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.contact-section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.section-title p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info, form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    height: 100%;
+}
+
+.info h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #6c757d;
+}
+
+.info i {
+    color: #007bff;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    margin-top: 20px;
+}
+
+
+.contact-content {
+    width: min(100%, 1308px);
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 12px;
+    padding-left: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+/* 여기서부터 수정 필요 */
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    margin-top: 24px;
+    margin-right: 12px;
+    margin-left: 12px;
+    justify-content: center;
+    width: min(100%, 1320px);
+    height: 100%;
+}
+
+.contact-col-1 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+    height: 100%;
+    margin: 0 15px 0 0;
+
+}
+
+ .contact-col-2 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+    height: 100%;
+    margin: 0 15px 0 0;
+
+ }
+
+
+
+.contact-info {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding: 30px;
+    height: 100%;
+    font-family:"Jost", sans-serif;
+}
+
+
+.contact-col-1 h3 {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: var(--heading-color);
+}
+
+.contact-address, .contact-phone, .contact-email {
+    margin-bottom: 40px;
+}
+
+.contact-col-1 p {
+    padding: 0;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact-info i {
+    font-size: 20px;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.contact-address:hover i, .contact-email:hover i, .contact-phone:hover i {
+    background: var(--accent-color);
+    color:#ffffff
+}
+    
+
+.contact-address, .contact-phone, .contact-email {
+    display: flex;
+    flex-direction: row;
+}
+
+/* =============================여기서부터 오른쪽 박스============================ */
+.contact-form {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+    font-family:"Jost", sans-serif;
+    padding: 0 30px 0 10px;
+    height: 100%;
+    border-radius: 0;
+} 
+
+.form-inbox {
+    margin-top: 24px;
+    margin-right: 12px;
+    margin-left: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.form-top {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group-1 {
+    width: 46.5%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.form-group-2 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.form-group-1 p, .form-group-2 p, .form-group-3 p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+
+}
+
+.form-control-2 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 0;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+
+}
+
+
+/* -------------------여기서부터 버튼----------------- */
+.form-group-3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    margin-top: 15.6px;
+    font-size: 14px;
+}
+
+.form-btn {
+    background:var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+    font-size: 16px;
+    height: 44px;
+}
+
+.form-btn:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+
+
+@media (max-width: 768px) {
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .info iframe {
+        height: 200px;
+    }
+}
