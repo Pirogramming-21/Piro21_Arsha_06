@@ -139,3 +139,34 @@ section, .section {
 .about-read-more:hover i {
     transform: translateX(5px);
 }
+
+/* animation */
+.about-section-title{
+    animation: up-scroll-animation 1s ease-in-out;
+}
+
+@keyframes up-scroll-animation {
+    0% {
+        transform: translateY(50px); /* 시작 위치: 아래에서 위로 50px 이동 */
+        opacity: 0; /* 시작 시 투명도 */
+    }
+    100% {
+        transform: translateY(0); /* 최종 위치: 원래 위치로 복귀 */
+        opacity: 1; /* 최종 시 투명도 */
+    }
+}
+
+.about-container{
+    animation: up-scroll-animation 3s ease-in-out;
+}
+
+@keyframes up-scroll-animation {
+    0% {
+        transform: translateY(50px); /* 시작 위치: 아래에서 위로 50px 이동 */
+        opacity: 0; /* 시작 시 투명도 */
+    }
+    100% {
+        transform: translateY(0); /* 최종 위치: 원래 위치로 복귀 */
+        opacity: 1; /* 최종 시 투명도 */
+    }
+}

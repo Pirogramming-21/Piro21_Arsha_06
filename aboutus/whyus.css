@@ -130,3 +130,63 @@
     vertical-align: -.125em;
     -webkit-font-smoothing: antialiased;
 }
+
+/* click toggle*/
+.why-checkbox {
+    display: none;
+}
+
+.why-checkbox:checked + .why-label .why-toggle {
+    transform: rotate(90deg);
+    color: var(--accent-color);
+}
+
+.why-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.why-checkbox:checked + .why-label h3 {
+    color: var(--accent-color);
+}
+
+.why-faq-content {
+    display: none;
+}
+
+.why-checkbox:checked + .why-label .why-faq-content {
+    display: block;
+}
+
+.why-us .why-content-bottom p {
+    display: none;
+    color: black;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.why-checkbox:checked + .why-label .why-faq-content p {
+    display: block;
+    max-height: 1000px; 
+    opacity: 1;
+}
+
+/* animation */
+.why-container{
+    animation: up-scroll-animation 4s ease-in-out;
+}
+
+@keyframes up-scroll-animation {
+    0% {
+        transform: translateY(50px); /* 시작 위치: 아래에서 위로 50px 이동 */
+        opacity: 0; /* 시작 시 투명도 */
+    }
+    100% {
+        transform: translateY(0); /* 최종 위치: 원래 위치로 복귀 */
+        opacity: 1; /* 최종 시 투명도 */
+    }
+}
+
