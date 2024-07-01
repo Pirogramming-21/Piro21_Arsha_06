@@ -127,6 +127,7 @@ section,
 
 .testimonials .testimonial-item {
     text-align: center;
+    height: 328px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -200,7 +201,7 @@ section,
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    animation: slide 25s infinite;
+    animation: slide 50s infinite;
 }
 
 .slide {
@@ -241,56 +242,116 @@ section,
     width: 80%;
 }
 
-/* -----------------------------점점---------------------------------- */
-.swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-    text-align: center;
-    transition: .3s opacity;
-    transform: translate3d(0, 0, 0);
-    z-index: 10;
-    bottom: var(--swiper-pagination-bottom, 8px);
-    top: var(--swiper-pagination-top, auto);
-    left: 0;
-    width: 100%;
-}
-
-.swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    opacity: 1;
-    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-
 @keyframes slide {
 
     0%,
-    16.67% {
+    8.33% {
         transform: translateX(0%);
     }
 
-    20%,
-    36.67% {
+    10%,
+    18.34% {
         transform: translateX(-100%);
     }
 
-    40%,
-    56.67% {
+    20%,
+    28.34% {
         transform: translateX(-200%);
     }
 
-    60%,
-    76.67% {
+    30%,
+    38.34% {
         transform: translateX(-300%);
     }
 
-    80%,
-    96.67% {
+    40.01%,
+    48.34% {
         transform: translateX(-400%);
+    }
+
+    50.01%,
+    58.34% {
+        transform: translateX(-500%);
+    }
+
+    60.01%,
+    68.34% {
+        transform: translateX(-600%);
+    }
+
+    70.01%,
+    78.34% {
+        transform: translateX(-700%);
+    }
+
+    80.01%,
+    88.34% {
+        transform: translateX(-800%);
+    }
+
+    90.01%,
+    98.34% {
+        transform: translateX(-900%);
     }
 
     100% {
         transform: translateX(0%);
     }
+}
+
+
+
+.pagination {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    animation: dotAnimation 25s infinite;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.dot:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.dot:nth-child(5) {
+    animation-delay: 20s;
+}
+
+@keyframes dotAnimation {
+
+    1%,
+    10% {
+        background-color: var(--accent-color);
+    }
+
+
+    28%,
+    28% {
+        background-color: #ddd;
+    }
+
 }

@@ -5,7 +5,8 @@ body {
     font-family: var(--default-font);
 }
 
-section, .section {
+section,
+.section {
     color: var(--default-color);
     background-color: var(--background-color);
     padding: 40px 0;
@@ -60,7 +61,8 @@ section, .section {
 /* Main container */
 .about-container {
     width: 100%;
-    margin: 20px auto;  /* 상하 마진도 추가 */
+    margin: 20px auto;
+    /* 상하 마진도 추가 */
     padding: 20px 0;
 }
 
@@ -107,7 +109,7 @@ section, .section {
 }
 
 .about-col ul li i {
-    color:var(--accent-color);
+    color: var(--accent-color);
     font-size: 1.5em;
     margin-right: 5px;
 }
@@ -141,7 +143,6 @@ section, .section {
 
 .about-read-more:hover i {
     transform: translateX(5px);
-<<<<<<< HEAD
 }
 
 /* animation */
@@ -183,6 +184,4 @@ section, .section {
         opacity: 1;
         /* 理쒖쥌 �� �щ챸�� */
     }
-=======
->>>>>>> develop4
 }
