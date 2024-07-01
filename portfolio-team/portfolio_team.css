@@ -1,5 +1,13 @@
 
 /*portfolio css*/
+:root {
+    --default-color: #ffffff;
+    --background-color: #37517e;
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
 .portfolio-body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -8,89 +16,84 @@
     padding: 20px;
 }
 
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-}
 
-.portfolio-item {
-    display: none;
-    position: relative;
-    width: calc(33.333% - 20px);
-
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    opacity: 0;
-    transform: scale(0.95);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    overflow: hidden;
-}
-
-.portfolio-item .portfolio-title {
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-    background-color: white;
-    color: black;
-    padding: 10px 0;
-    transition: bottom 0.3s ease, opacity 1s ease;
-}
-
-.portfolio-item:hover .portfolio-title {
-    bottom: 0;
-    opacity: 0.8;
-}
-
- .portfolio-filter-button {
+.portfolio-filter {
     display: inline-block;
-    margin: 5px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.portfolio-filter-button:hover {
-    background-color: #47b2e4;
-    color: white;
+    margin-bottom: 20px;
 }
 
 input[type="radio"] {
     display: none;
 }
 
-input[type="radio"]:checked+label {
-    background-color: #47b2e4;
+.portfolio-filter {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 8px 16px;
+    color: black;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
-#all:checked~.portfolio .portfolio-item,
-#app:checked~.portfolio .app,
-#card:checked~.portfolio .card,
-#web:checked~.portfolio .web {
-    display: block;
-    opacity: 1;
-    transform: scale(1);
-    animation: fadeIn 0.5s ease-in-out;
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.portfolio-container {
+    padding-top: 0;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+input[type="radio"] + label:hover,
+input[type="radio"]:checked + label {
+    background: #47b2e4;
+    color: white;
+}
+
+.portfolio-container {
+    column-count: 3;
+    gap: 16px;
+    height: 1000px;
+    max-width: 1040px;
+}
+
+.portfolio-container img {
+    break-inside: avoid;
+    border-radius: 8px;
+    padding: 7.5px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: auto;
+}
+
+.portfolio-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+ 
+
+    overflow: hidden;
+ 
 }
 
 @keyframes fadeIn {
@@ -98,7 +101,6 @@ input[type="radio"]:checked+label {
         opacity: 0;
         transform: scale(0.95);
     }
-
     to {
         opacity: 1;
         transform: scale(1);
@@ -106,98 +108,142 @@ input[type="radio"]:checked+label {
 }
 
 
-@media (max-width: 768px) {
-    .portfolio-item {
-        width: calc(50% - 20px);
-    }
+input[type="radio"]:checked + label ~ .portfolio .portfolio-img {
+    display: none;
+    opacity: 0;
+ 
 }
 
-@media (max-width: 480px) {
-    .portfolio-item {
-        width: calc(100% - 20px);
-    }
-}
-
-
-.portfolio-icon {
-    font-size: 28px;
-}
-
-.portfolio-icon:hover{
-    color: #47b2e4;
-}
-
-.portfolio-title-more {
+#all:checked + label ~ .portfolio .portfolio-img,
+#app:checked + label ~ .portfolio .portfolio-img.app,
+#card:checked + label ~ .portfolio .portfolio-img.card,
+#web:checked + label ~ .portfolio .portfolio-img.web {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 15px;
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out;
+
 }
 
-.portfolio-title-more-text {
+
+.portfolio-title {
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    bottom: -82px;
+    opacity: 0;
 }
 
-.portfolio-span1 {
-    font-size: 18px;
-    color: #37517E;
-    font-weight: bold;
-    margin-bottom: 10px;
+.portfolio-img:hover .portfolio-title {
+    transition: 0.3s;
+    opacity: 0.9;
+    bottom: 0;
 }
 
-.portfolio-span2 {
-    font-size: 14px;
+
+@media screen and (max-width: 990px) {
+    .portfolio-container {
+        column-count: 2;
+        height: fit-content;
+        margin: 60px;
+        margin-top: -12px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .portfolio-container {
+        margin: -18px;
+        column-count: 1;
+    }
 }
 
 
 .contact-section-title {
-text-align: center;
-padding-bottom:20px;
-position: relative;
-}
+    text-align: center;
+    padding-bottom:20px;
+    position: relative;
+    }
+    
+    .contact-section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: #37517E;
+    font-family:  "Jost", sans-serif;
+    }
+    .contact-section-title h2:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+    }
+    
+    .contact-section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #47b2e4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    }
+    .section-title p {
+    font-size: 16px;
+    color: #6c757d;
+    }
+    
 
-.contact-section-title h2 {
-font-size: 32px;
-font-weight: 700;
-margin-bottom: 20px;
-padding-bottom: 20px;
-text-transform: uppercase;
-position: relative;
-color: #37517E;
-font-family:  "Jost", sans-serif;
-}
-.contact-section-title h2:before {
-content: "";
-position: absolute;
-display: block;
-width: 160px;
-height: 1px;
-background: color-mix(in srgb, #444444, transparent 60%);
-left: 0;
-right: 0;
-bottom: 1px;
-margin: auto;
-}
+   
+    
 
-.contact-section-title h2::after {
-content: "";
-position: absolute;
-display: block;
-width: 60px;
-height: 3px;
-background: #47b2e4;
-left: 0;
-right: 0;
-bottom: 0;
-margin: auto;
-}
-.section-title p {
-font-size: 16px;
-color: #6c757d;
-}
+    .portfolio-icon {
+        font-size: 28px;
+    }
+    
+    .portfolio-icon:hover{
+        color: #47b2e4;
+    }
+    
+    .portfolio-title-more {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 15px;
+    }
+    
+    .portfolio-title-more-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+    }
+    
+    .portfolio-span1 {
+        font-size: 18px;
+        color: #37517E;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .portfolio-span2 {
+        font-size: 14px;
+    }
+    
 
 
 
