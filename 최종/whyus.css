@@ -42,7 +42,7 @@
 }
 
 .why-us .bottom-content img {
-    width: 50%;
+    width: 420px;
     height: auto;
     max-width: 600px;
     margin: 0;
@@ -50,6 +50,15 @@
 }
 
 /* content */
+.why-content {
+    max-width: 740px;
+    padding: 0 40px;
+}
+
+.why-content-bottom {
+    max-width: 780px;
+    padding-left: 40px;
+}
 .why-us .why-content h3 {
     font-weight: 400;
     font-size: 34px;
@@ -80,6 +89,7 @@
     color: var(--heading-color);
     font-family: var(--heading-font);
     font-size: 17px;
+    margin: 0;
 }
 
 .why-us .why-container .why-item h3:hover {
@@ -119,6 +129,9 @@
     content: "\f285";
 }
 
+.why-label {
+    height: 24px;
+}
 .why-us .bii::before,
 [class^="bii-"]::before,
 [class*=" bii-"]::before {
@@ -134,6 +147,9 @@
 }
 
 /* click toggle*/
+.why-item {
+    height: auto;
+}
 .why-checkbox {
     display: none;
 }
@@ -146,6 +162,7 @@
 .why-label {
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .why-checkbox:checked+.why-label h3 {
@@ -162,7 +179,7 @@
 
 .why-us .why-content-bottom p {
     display: none;
-    color: black;
+    color: var(--default-color);
     margin-top: 10px;
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
     max-height: 0;

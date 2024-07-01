@@ -5,8 +5,7 @@ body {
     font-family: var(--default-font);
 }
 
-section,
-.section {
+section, .section {
     color: var(--default-color);
     background-color: var(--background-color);
     padding: 40px 0;
@@ -61,8 +60,7 @@ section,
 /* Main container */
 .about-container {
     width: 100%;
-    margin: 20px auto;
-    /* �곹븯 留덉쭊�� 異붽� */
+    margin: 20px auto;  /* 상하 마진도 추가 */
     padding: 20px 0;
 }
 
@@ -99,6 +97,7 @@ section,
 
 .about-col ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .about-col ul li {
@@ -108,8 +107,9 @@ section,
 }
 
 .about-col ul li i {
-    color: #00aaff;
+    color:var(--accent-color);
     font-size: 1.5em;
+    margin-right: 5px;
 }
 
 .about-col ul li span {
@@ -119,13 +119,14 @@ section,
 /* read-more content */
 .about-read-more {
     display: inline-block;
-    color: #00aaff;
+    color: var(--accent-color);
     text-decoration: none;
-    font-weight: bold;
-    border: 2px solid #00aaff;
+    border: 2px solid var(--accent-color);
     padding: 8px 28px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-read-more:hover {
@@ -140,6 +141,7 @@ section,
 
 .about-read-more:hover i {
     transform: translateX(5px);
+<<<<<<< HEAD
 }
 
 /* animation */
@@ -181,4 +183,6 @@ section,
         opacity: 1;
         /* 理쒖쥌 �� �щ챸�� */
     }
+=======
+>>>>>>> develop4
 }

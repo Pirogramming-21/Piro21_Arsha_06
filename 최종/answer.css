@@ -100,6 +100,9 @@ section,
     margin-right: auto;
     margin-left: auto;
 }
+.ans-item {
+    width: 1076px;
+}
 
 /* inside container */
 .ans-faq-container .ans-item h3 {
@@ -200,7 +203,7 @@ section,
 
 .ans-content p {
     display: none;
-    color: black;
+    color: #444444;
     margin-top: 10px;
     /* Adjust the margin value as needed */
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
