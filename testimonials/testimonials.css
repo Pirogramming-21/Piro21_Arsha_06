@@ -1,14 +1,4 @@
 :root {
-    --background-color: #f5f6f8;
-    --default-color: #444444;
-    --heading-color: #37517e;
-    --accent-color: #47b2e4;
-    --surface-color: #ffffff;
-    --contrast-color: #ffffff;
-}
-
-
-:root {
     --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --heading-font: "Jost", sans-serif;
     --nav-font: "Poppins", sans-serif;
@@ -70,7 +60,7 @@ section,
     overflow: clip;
 }
 
-.light-background {
+.testimonials .light-background {
     --background-color: #f5f6f8;
     --surface-color: #ffffff;
 }
