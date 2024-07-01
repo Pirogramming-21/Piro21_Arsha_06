@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
+
 <body>
-<!-- -------------------------------------여기서부터 services 시작=================================== -->
+    <!-- -------------------------------------여기서부터 services 시작=================================== -->
     <div class="white"></div>
     <div class="services-main">
         <section class="services-section">
@@ -78,8 +80,8 @@
     </div>
     <div class="white"></div>
     <!-- --------------------------services 끝------------------------------------------------ -->
-     <!-- -----------------------------------------------contact 시작--------------------------------------------------------------- -->
-     <section id="contact" class="contact-container">
+    <!-- -----------------------------------------------contact 시작--------------------------------------------------------------- -->
+    <section id="contact" class="contact-container">
         <div class="contact-section-title">
             <h2>Contact</h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -121,19 +123,16 @@
                             <div class="form-top">
                                 <div class="form-group-1">
                                     <p>Your name</p>
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        required>
+                                    <input type="text" name="name" class="form-control" id="name" required>
                                 </div>
                                 <div class="form-group-1">
                                     <p>Your Email</p>
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        required>
+                                    <input type="email" class="form-control" name="email" id="email" required>
                                 </div>
                             </div>
                             <div class="form-group-2">
                                 <p>Subject</p>
-                                <input type="text" class="form-control" name="subject" id="subject" 
-                                    required>
+                                <input type="text" class="form-control" name="subject" id="subject" required>
                             </div>
                             <div class="form-group-2">
                                 <p>Message</p>
@@ -147,7 +146,7 @@
             </div>
         </div>
     </section>
-      <!-- --------------------------------contact 끝------------------------------------------------------------------------------ -->
+    <!-- --------------------------------contact 끝------------------------------------------------------------------------------ -->
     <!-- -------------------------------------------footer 시작----------------------------------------------------------------- -->
     <!-- Join our newsletter 있는 회색 부분 -->
     <section id="footer-top">
@@ -158,10 +157,12 @@
                         <h4>Join Our Newsletter</h4>
                         <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
                     </div>
-                    <form action="#" method="post" class="footer-subscribe">
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
+                    <div class="footer-subscribe-center">
+                        <form action="#" method="post" class="footer-subscribe">
+                            <input type="email" name="email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,7 +180,8 @@
                     </div>
                     <div class="footer-col-1-p">
                         <p><strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br></p>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
                     </div>
 
                 </div>
@@ -202,7 +204,7 @@
                     </ul>
                 </div>
                 <div class="footer-col-1">
-                    <h4>Follow Us</h4>
+                    <h2>Follow Us</h2>
                     <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                     <div class="footer-social-links">
                         <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -212,12 +214,19 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <p>&copy; Copyright <strong>Arsha</strong>. All Rights Reserved</p>
-                <p>Designed by <a href="#">BootstrapMade</a></p>
-            </div>
         </div>
-    </footer>    
+        <div class="footer-copyright">
+            <p>&copy; Copyright <strong>Arsha</strong> All Rights Reserved</p>
+            <p>Designed by <a href="#">BootstrapMade</a></p>
+        </div>
+    </footer>
     <!-- -----------------------------------------------------------footer 끝----------------------------------------------- -->
+    <!-- ---------------------------------------------------------scroll 버튼------------------------------------------------------- -->
+
+    <a href="#" class="scroll-top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
 </body>
+
 </html>
