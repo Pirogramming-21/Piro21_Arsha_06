@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="variable.css">
   <link rel="stylesheet" href="testimonials.css">
+  <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="whyus.css">
+  <link rel="stylesheet" href="skills.css">
+  <link rel="stylesheet" href="answer.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -19,7 +23,7 @@
 </head>
 
 <body>
-  <!-- ------------------------------------------------about us 시작--------------------------------------------->
+  <!-------------------------------- aboutus -------------------------------->
   <section id="about" class="about section">
 
     <!-- Section Title -->
@@ -74,33 +78,46 @@
             </p>
           </div>
 
-          <div class="why-content">
+          <div class="why-content-bottom">
 
             <div class="why-item">
-
-              <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
-              <div class="why-faq-content">
-                <!-- <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p> -->
-              </div>
-              <i class="why-toggle bii bii-chevron-why"></i>
+              <input type="checkbox" id="toggle-1" class="why-checkbox">
+              <label for="toggle-1" class="why-label">
+                <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="why-faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="why-toggle bii bii-chevron-why"></i>
+              </label>
             </div><!-- End Faq item-->
 
             <div class="why-item">
-              <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-              <div class="why-faq-content">
-                <!-- <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p> -->
-              </div>
-              <i class="why-toggle bii bii-chevron-why"></i>
+              <input type="checkbox" id="toggle-2" class="why-checkbox">
+              <label for="toggle-2" class="why-label">
+                <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <div class="why-faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
+                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="why-toggle bii bii-chevron-why"></i>
+              </label>
             </div><!-- End Faq item-->
 
             <div class="why-item">
-              <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-              <div class="why-faq-content">
-                <!-- <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p> -->
-              </div>
-              <i class="why-toggle bii bii-chevron-why"></i>
+              <input type="checkbox" id="toggle-3" class="why-checkbox">
+              <label for="toggle-3" class="why-label">
+                <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="why-faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
+                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis</p>
+                </div>
+                <i class="why-toggle bii bii-chevron-why"></i>
+              </label>
             </div><!-- End Faq item-->
-
           </div>
 
         </div>
@@ -238,180 +255,180 @@
 
   <!-- --------------------------portfolio 시작------------------------------------------------ -->
 
- <!--포트폴리오-->
- <section class="portfolio-body">
-  <div class="contact-section-title">
+  <!--포트폴리오-->
+  <section class="portfolio-body">
+    <div class="contact-section-title">
       <h2>Portfolio</h2>
       <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-  </div>
+    </div>
 
-  <input type="radio" id="all" name="filter" checked>
-  <label for="all" class="portfolio-filter">All</label>
-  <input type="radio" id="app" name="filter">
-  <label for="app" class="portfolio-filter">App</label>
-  <input type="radio" id="card" name="filter">
-  <label for="card" class="portfolio-filter">Card</label>
-  <input type="radio" id="web" name="filter">
-  <label for="web" class="portfolio-filter">Web</label>
+    <input type="radio" id="all" name="filter" checked>
+    <label for="all" class="portfolio-filter">All</label>
+    <input type="radio" id="app" name="filter">
+    <label for="app" class="portfolio-filter">App</label>
+    <input type="radio" id="card" name="filter">
+    <label for="card" class="portfolio-filter">Card</label>
+    <input type="radio" id="web" name="filter">
+    <label for="web" class="portfolio-filter">Web</label>
 
-  <div class="portfolio">
+    <div class="portfolio">
       <div class="portfolio-container">
-          <div class="portfolio-img app">
-              <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
-                  alt="사진">
-              <div class="portfolio-title">
-                  <div class="portfolio-title-more">
-                      <div class="portfolio-title-more-text">
-                          <span class="portfolio-span1">App1</span>
-                          <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+        <div class="portfolio-img app">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
+            alt="사진">
+          <div class="portfolio-title">
+            <div class="portfolio-title-more">
+              <div class="portfolio-title-more-text">
+                <span class="portfolio-span1">App1</span>
+                <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
 
-                      </div>
-                      <div>
-                          <i class="bi bi-zoom-in portfolio-icon"></i>
-                          <i class="bi bi-link-45deg portfolio-icon"></i>
-                      </div>
-                  </div>
               </div>
+              <div>
+                <i class="bi bi-zoom-in portfolio-icon"></i>
+                <i class="bi bi-link-45deg portfolio-icon"></i>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-img web">
-              <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
-                  alt="사진">
-              <div class="portfolio-title">
-                  <div class="portfolio-title-more">
-                      <div class="portfolio-title-more-text">
-                          <span class="portfolio-span1">Branding2</span>
-                          <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+        </div>
+        <div class="portfolio-img web">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
+            alt="사진">
+          <div class="portfolio-title">
+            <div class="portfolio-title-more">
+              <div class="portfolio-title-more-text">
+                <span class="portfolio-span1">Branding2</span>
+                <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
 
-                      </div>
-                      <div>
-                          <i class="bi bi-zoom-in portfolio-icon"></i>
-                          <i class="bi bi-link-45deg portfolio-icon"></i>
-                      </div>
-                  </div>
               </div>
+              <div>
+                <i class="bi bi-zoom-in portfolio-icon"></i>
+                <i class="bi bi-link-45deg portfolio-icon"></i>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-img card">
-              <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
-                  alt="사진">
-              <div class="portfolio-title">
-                  <div class="portfolio-title-more">
-                      <div class="portfolio-title-more-text">
-                          <span class="portfolio-span1">Product1</span>
-                          <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+        </div>
+        <div class="portfolio-img card">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+            alt="사진">
+          <div class="portfolio-title">
+            <div class="portfolio-title-more">
+              <div class="portfolio-title-more-text">
+                <span class="portfolio-span1">Product1</span>
+                <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
 
-                      </div>
-                      <div>
-                          <i class="bi bi-zoom-in portfolio-icon"></i>
-                          <i class="bi bi-link-45deg portfolio-icon"></i>
-                      </div>
-                  </div>
               </div>
+              <div>
+                <i class="bi bi-zoom-in portfolio-icon"></i>
+                <i class="bi bi-link-45deg portfolio-icon"></i>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-img card">
-              <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
-                  alt="사진">
-              <div class="portfolio-title">
-                  <div class="portfolio-title-more">
-                      <div class="portfolio-title-more-text">
-                          <span class="portfolio-span1">Product2</span>
-                          <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+        </div>
+        <div class="portfolio-img card">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
+            alt="사진">
+          <div class="portfolio-title">
+            <div class="portfolio-title-more">
+              <div class="portfolio-title-more-text">
+                <span class="portfolio-span1">Product2</span>
+                <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
 
-                      </div>
-                      <div>
-                          <i class="bi bi-zoom-in portfolio-icon"></i>
-                          <i class="bi bi-link-45deg portfolio-icon"></i>
-                      </div>
-                  </div>
               </div>
+              <div>
+                <i class="bi bi-zoom-in portfolio-icon"></i>
+                <i class="bi bi-link-45deg portfolio-icon"></i>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-img web">
-              <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
-                  alt="사진">
-              <div class="portfolio-title">
-                  <div class="portfolio-title-more">
-                      <div class="portfolio-title-more-text">
-                          <span class="portfolio-span1">Branding3</span>
-                          <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+        </div>
+        <div class="portfolio-img web">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+            alt="사진">
+          <div class="portfolio-title">
+            <div class="portfolio-title-more">
+              <div class="portfolio-title-more-text">
+                <span class="portfolio-span1">Branding3</span>
+                <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
 
-                      </div>
-                      <div>
-                          <i class="bi bi-zoom-in portfolio-icon"></i>
-                          <i class="bi bi-link-45deg portfolio-icon"></i>
-                      </div>
-                  </div>
               </div>
+              <div>
+                <i class="bi bi-zoom-in portfolio-icon"></i>
+                <i class="bi bi-link-45deg portfolio-icon"></i>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-img web">
-              <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
-                  alt="사진">
-              <div class="portfolio-title">
-                  <div class="portfolio-title-more">
-                      <div class="portfolio-title-more-text">
-                          <span class="portfolio-span1">Branding1</span>
-                          <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+        </div>
+        <div class="portfolio-img web">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+            alt="사진">
+          <div class="portfolio-title">
+            <div class="portfolio-title-more">
+              <div class="portfolio-title-more-text">
+                <span class="portfolio-span1">Branding1</span>
+                <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
 
-                      </div>
-                      <div>
-                          <i class="bi bi-zoom-in portfolio-icon"></i>
-                          <i class="bi bi-link-45deg portfolio-icon"></i>
-                      </div>
-                  </div>
               </div>
+              <div>
+                <i class="bi bi-zoom-in portfolio-icon"></i>
+                <i class="bi bi-link-45deg portfolio-icon"></i>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-img app">
-              <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
-                  alt="사진">
-              <div class="portfolio-title">
-                  <div class="portfolio-title-more">
-                      <div class="portfolio-title-more-text">
-                          <span class="portfolio-span1">App2</span>
-                          <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+        </div>
+        <div class="portfolio-img app">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
+            alt="사진">
+          <div class="portfolio-title">
+            <div class="portfolio-title-more">
+              <div class="portfolio-title-more-text">
+                <span class="portfolio-span1">App2</span>
+                <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
 
-                      </div>
-                      <div>
-                          <i class="bi bi-zoom-in portfolio-icon"></i>
-                          <i class="bi bi-link-45deg portfolio-icon"></i>
-                      </div>
-                  </div>
               </div>
+              <div>
+                <i class="bi bi-zoom-in portfolio-icon"></i>
+                <i class="bi bi-link-45deg portfolio-icon"></i>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-img app">
-              <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
-                  alt="사진">
-              <div class="portfolio-title">
-                  <div class="portfolio-title-more">
-                      <div class="portfolio-title-more-text">
-                          <span class="portfolio-span1">App3</span>
-                          <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+        </div>
+        <div class="portfolio-img app">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
+            alt="사진">
+          <div class="portfolio-title">
+            <div class="portfolio-title-more">
+              <div class="portfolio-title-more-text">
+                <span class="portfolio-span1">App3</span>
+                <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
 
-                      </div>
-                      <div>
-                          <i class="bi bi-zoom-in portfolio-icon"></i>
-                          <i class="bi bi-link-45deg portfolio-icon"></i>
-                      </div>
-                  </div>
               </div>
+              <div>
+                <i class="bi bi-zoom-in portfolio-icon"></i>
+                <i class="bi bi-link-45deg portfolio-icon"></i>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-img card">
-              <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
-                  alt="사진">
-              <div class="portfolio-title">
-                  <div class="portfolio-title-more">
-                      <div class="portfolio-title-more-text">
-                          <span class="portfolio-span1">Product3</span>
-                          <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
+        </div>
+        <div class="portfolio-img card">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
+            alt="사진">
+          <div class="portfolio-title">
+            <div class="portfolio-title-more">
+              <div class="portfolio-title-more-text">
+                <span class="portfolio-span1">Product3</span>
+                <span class="portfolio-span2">Lorem ipsum, dolor sit</span>
 
-                      </div>
-                      <div>
-                          <i class="bi bi-zoom-in portfolio-icon"></i>
-                          <i class="bi bi-link-45deg portfolio-icon"></i>
-                      </div>
-                  </div>
               </div>
+              <div>
+                <i class="bi bi-zoom-in portfolio-icon"></i>
+                <i class="bi bi-link-45deg portfolio-icon"></i>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
   <!-- --------------------------portfolio 끝------------------------------------------------ -->
 
@@ -419,101 +436,101 @@
 
   <!-- --------------------------team 시작 ------------------------------------------------ -->
 
-   <!--Team-->
-   <section class="team-body">
+  <!--Team-->
+  <section class="team-body">
     <div class="contact-section-title">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <h2>Team</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
     </div>
 
 
     <div class="team">
-        <div class="team-item" >
-            <div class="team-member-info">
-                <div class="team-left">
-                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg" alt="William Anderson">
-                </div>
-                <div class="team-right">
-                    <h3 class="team-h3">Walter White</h3>
-                    <p class="team-position">Chief Executive Officer</p>
-                    <hr class="team-hr">
-                    <p class="team-description">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                    <div class="team-social-icons">
-                        <a href="#"><i class="bi bi-twitter-x" ></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    
-                </div>
+      <div class="team-item">
+        <div class="team-member-info">
+          <div class="team-left">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg" alt="William Anderson">
+          </div>
+          <div class="team-right">
+            <h3 class="team-h3">Walter White</h3>
+            <p class="team-position">Chief Executive Officer</p>
+            <hr class="team-hr">
+            <p class="team-description">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+            <div class="team-social-icons">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
+
+          </div>
         </div>
+      </div>
 
 
-        <div class="team-item" >
-            <div class="team-member-info">
-                <div class="team-left">
-                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-2.jpg" alt="William Anderson">
-                </div>
-                <div class="team-right">
-                    <h3 class="team-h3">Sarah Jhonson</h3>
-                    <p class="team-position">Product Manager</p>
-                    <hr class="team-hr">
-                    <p class="team-description">Aut maiores voluptates amet et quis praesentium qui senda para
-                    </p>
-                    <div class="team-social-icons">
-                        <a href="#"><i class="bi bi-twitter-x" ></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    
-                </div>
+      <div class="team-item">
+        <div class="team-member-info">
+          <div class="team-left">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-2.jpg" alt="William Anderson">
+          </div>
+          <div class="team-right">
+            <h3 class="team-h3">Sarah Jhonson</h3>
+            <p class="team-position">Product Manager</p>
+            <hr class="team-hr">
+            <p class="team-description">Aut maiores voluptates amet et quis praesentium qui senda para
+            </p>
+            <div class="team-social-icons">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
-        </div>
-        <div class="team-item" >
-            <div class="team-member-info">
-                <div class="team-left">
-                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-3.jpg" alt="William Anderson">
-                </div>
-                <div class="team-right">
-                    <h3 class="team-h3">William Anderson</h3>
-                    <p class="team-position">CTO</p>
-                    <hr class="team-hr">
-                    <p class="team-description">Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                    <div class="team-social-icons">
-                        <a href="#"><i class="bi bi-twitter-x" ></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
 
-        <div class="team-item" >
-            <div class="team-member-info">
-                <div class="team-left">
-                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-4.jpg" alt="William Anderson">
-                </div>
-                <div class="team-right">
-                    <h3 class="team-h3">Amanda Jepson</h3>
-                    <p class="team-position">Accountant</p>
-                    <hr class="team-hr">
-                    <p class="team-description">Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                    <div class="team-social-icons">
-                        <a href="#"><i class="bi bi-twitter-x" ></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="team-item">
+        <div class="team-member-info">
+          <div class="team-left">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-3.jpg" alt="William Anderson">
+          </div>
+          <div class="team-right">
+            <h3 class="team-h3">William Anderson</h3>
+            <p class="team-position">CTO</p>
+            <hr class="team-hr">
+            <p class="team-description">Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+            <div class="team-social-icons">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="team-item">
+        <div class="team-member-info">
+          <div class="team-left">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-4.jpg" alt="William Anderson">
+          </div>
+          <div class="team-right">
+            <h3 class="team-h3">Amanda Jepson</h3>
+            <p class="team-position">Accountant</p>
+            <hr class="team-hr">
+            <p class="team-description">Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+            <div class="team-social-icons">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
-    </section>
+  </section>
 
   <!-- --------------------------team 끝------------------------------------------------ -->
 
@@ -695,7 +712,8 @@
         <div class="swiper-pagination">
           <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
           <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
-          <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span>
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+            aria-label="Go to slide 3" aria-current="true"></span>
           <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
           <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span>
         </div>
@@ -703,20 +721,18 @@
     </div>
   </section>
   <!-- -------------------------------------------------testimonials 끝-------------------------------------------->
-  <!-- -------------------------------------------------answer 시작-------------------------------------------->
+  <!-------------------------------- answer -------------------------------->
   <section id="ccc" class="section answer-light-background">
 
     <!-- Section Title -->
-    <div class="answer-container answer-title">
+    <div class="answer-container-top answer-title">
       <h2>Frequently Asked Questions</h2>
       <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
         consectetur velit. Quisquam quos quisquam
-        cupiditate. Et nemo qui
-        <hr> impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-      </p>
+        cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
     </div><!-- End Section Title -->
 
-    <div class="answer-container">
+    <div class="answer-container-bottom">
 
       <div class="answer-row">
 
@@ -725,48 +741,73 @@
           <div class="ans-faq-container">
 
             <div class="ans-item">
-              <i class="ans-icon tog-ans-circle"></i>
-              <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-              <div class="ans-content">
-                <!-- <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p> -->
-              </div>
-              <i class="ans-toggle tog-chevron-ans"></i>
+              <input type="checkbox" id="ans-toggle-1" class="ans-checkbox">
+              <label for="ans-toggle-1" class="ans-label">
+                <i class="ans-icon tog-ans-circle"></i>
+                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="ans-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="ans-toggle tog-chevron-ans"></i>
+              </label>
             </div>
 
             <div class="ans-item">
-              <i class="ans-icon tog-ans-circle"></i>
-              <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-              <div class="ans-content">
-                <!-- <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p> -->
-              </div>
-              <i class="ans-toggle tog-chevron-ans"></i>
+              <input type="checkbox" id="ans-toggle-2" class="ans-checkbox">
+              <label for="ans-toggle-2" class="ans-label">
+                <i class="ans-icon tog-ans-circle"></i>
+                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <div class="ans-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
+                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="ans-toggle tog-chevron-ans"></i>
+              </label>
             </div>
 
             <div class="ans-item">
-              <i class="ans-icon tog-ans-circle"></i>
-              <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-              <div class="ans-content">
-                <!-- <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p> -->
-              </div>
-              <i class="ans-toggle tog-chevron-ans"></i>
+              <input type="checkbox" id="ans-toggle-3" class="ans-checkbox">
+              <label for="ans-toggle-3" class="ans-label">
+                <i class="ans-icon tog-ans-circle"></i>
+                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="ans-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
+                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis</p>
+                </div>
+                <i class="ans-toggle tog-chevron-ans"></i>
+              </label>
             </div>
 
             <div class="ans-item">
-              <i class="ans-icon tog-ans-circle"></i>
-              <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-              <div class="ans-content">
-                <!-- <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p> -->
-              </div>
-              <i class="ans-toggle tog-chevron-ans"></i>
+              <input type="checkbox" id="ans-toggle-4" class="ans-checkbox">
+              <label for="ans-toggle-4" class="ans-label">
+                <i class="ans-icon tog-ans-circle"></i>
+                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <div class="ans-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
+                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="ans-toggle tog-chevron-ans"></i>
+              </label>
             </div>
 
             <div class="ans-item">
-              <i class="ans-icon tog-ans-circle"></i>
-              <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-              <div class="ans-content">
-                <!-- <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p> -->
-              </div>
-              <i class="ans-toggle tog-chevron-ans"></i>
+              <input type="checkbox" id="ans-toggle-5" class="ans-checkbox">
+              <label for="ans-toggle-5" class="ans-label">
+                <i class="ans-icon tog-ans-circle"></i>
+                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
+                <div class="ans-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
+                    Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
+                    Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="ans-toggle tog-chevron-ans"></i>
+              </label>
             </div>
 
           </div>
@@ -775,7 +816,6 @@
       </div>
     </div>
   </section>
-  <!-- --------------------------------------------------answer 끝------------------------------------------------- -->
   <!-- -----------------------------------------------contact 시작--------------------------------------------------------------- -->
   <section id="contact" class="contact-container">
     <div class="contact-section-title">
