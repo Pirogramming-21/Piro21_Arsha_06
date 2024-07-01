@@ -1,0 +1,294 @@
+:root {
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+}
+
+
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+    --bs-gutter-y: 1.5rem;
+    --bs-gutter-x: 1.6rem;
+}
+
+/* 글씨체: font-family: "Jost", sans-serif; */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+}
+.white {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+.services-main {
+    display: flex;
+    flex-direction: column;
+}
+.services-section {
+    position: relative;
+    z-index: 2;
+    background-color: #f5f6f8;
+    padding: 0 0 10px 0; 
+}
+
+/* ---------------------------------------------------------------------- */
+.services-section-title {
+    text-align: center;
+    padding:0;
+    position: relative;
+    margin-bottom: 48px;
+    margin-top: 64px;
+}
+
+.services-section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--heading-color);
+    font-family:  "Jost", sans-serif;
+    margin-top: 0;
+}
+.services-section-title h2:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.services-section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.services-section-title p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+/* ------------------------------------------------------------------------------- */
+.services-container {
+    padding: 0 12px 60px 12px;
+}
+
+
+.services-box-container {
+    margin: 0 auto;
+    text-align: center;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    display: flex;
+    justify-content: center;
+    font-family: "Jost", sans-serif;
+    width: min(100%, 1320px);
+}
+
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+.services-row {
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.services-col-1 {
+    top: 0;
+    height: 100%;
+    flex: 0 0 auto;
+    width: 25%;
+    margin-top: 24px;
+    padding: 0 12px;
+
+}
+.services-box {
+    background-color: var(--surface-color);
+    box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    transition: all ease-in-out 0.4s;
+}
+
+
+.services-box:hover {
+    transform: translateY(-10px);
+}
+  
+.services-box:hover h4 {
+    color: var(--accent-color);
+}
+
+.services-box-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.services-box i {
+    color: var(--accent-color);
+    font-size: 36px;
+    transition: 0.3s;
+}
+
+.services-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--heading-color);
+    transition: ease-in-out 0.3s;
+}
+
+
+
+.services-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+
+/* -----------------여기서부터 call to action ----------------------------- */
+.cta-section {
+    position: relative;
+    z-index: 2;
+    height: 345.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    font-family: "Jost", sans-serif;
+}
+
+.cta-background {
+    content: "";
+    background: color-mix(in srgb, #37517e, transparent 35%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display:block; 
+}
+
+.cta-overlay {
+    background: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.cta-container {
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    width: min(100%, 1320px);
+    margin: 0 auto;
+    height: 105.6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.cta-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: min(100%, 960px);
+}
+.cta-container-text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.cta-container-text p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.cta-btn-section {
+    text-align: center;
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.cta-button {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    height: 24px;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background:  #47b2e4b3;
+}
+

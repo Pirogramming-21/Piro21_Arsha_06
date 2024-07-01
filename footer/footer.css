@@ -1,0 +1,307 @@
+:root {
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+}
+
+
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+    --bs-gutter-y: 1.5rem;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff;
+    /* 흰색 배경 추가 */
+}
+
+.footer-top-container {
+    margin: 0 auto;
+    padding: 20px 0;
+    padding-right: calc(1.5rem* .5);
+    padding-left: calc(1.5rem* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.join-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.join-title h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    color: #37517e;
+    padding-bottom: 12px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    font-family: "Jost", sans-serif;
+}
+
+.join-title p {
+    font-size: 16px;
+    color: #444444;
+}
+
+#footer-top {
+    background: #f1f1f1;
+    padding: 40px 0;
+}
+
+.footer-top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-top-center {
+    flex: 0 0 auto;
+    width: 50%;
+    padding-right: calc(1.5rem* .5);
+    padding-left: calc(1.5rem* .5);
+}
+
+.footer-subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    height: 42.6px;
+    background-color: white;
+    /* max-width: 636px; */
+    /* transition: 0.3s; */
+}
+
+
+.footer-subscribe input[type="email"] {
+    padding: 4px;
+    width: 100%;
+    border: 0;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+}
+
+.footer-subscribe button {
+    padding: 0px 20px;
+    border: 0;
+    border-radius: 50px;
+    background: var(--accent-color);
+    margin: -7px -8px -7px 0;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    height: 100%;
+    /* transition: background 0.3s ease; */
+}
+
+.footer-subscribe button:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+
+/* ------------------------------footer-bottom 시작------------------------------------- */
+
+#footer-bottom {
+    width: 100%;
+    font-family: "Jost", sans-serif;
+}
+
+.footer-container {
+    background: white;
+    padding: 40px 0;
+    padding-top: 50px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    padding: 24px 12px;
+    margin-right: 62px;
+    margin-left: 62px;
+}
+
+.footer-col-1 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+
+.footer-col-1 >h3 {
+    color: var(--heading-color);
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+}
+
+.footer-col-1 > h4, 
+.footer-col-2 > h4 {
+    color: var(--heading-color);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+
+}
+
+.footer-col-1-p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.footer-col-1-p > p{
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.footer-col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+
+
+.footer-col-2 ul li {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col-2 ul li {
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+}
+
+#footer-bottom ul li i {
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+#footer-bottom ul li a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#footer-bottom ul li a:hover {
+    color: var(--accent-color);
+}
+
+
+/* 여기서부터 소셜미디어 링크 */
+.footer-social-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+.footer-social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer-social-links a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* 여기서부터 copyright */
+
+.footer-copyright {
+    padding-top: 24px;
+    height: 100px;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    margin-top: 24px;
+    margin-right: 62px;
+    margin-left: 62px;
+}
+
+.footer-copyright p {
+    margin: 5px 0;
+    color: #6c757d;
+    text-align: center;
+}
+
+.footer-copyright a {
+    color:  var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-copyright a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+/* @media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 60%;
+    }
+
+    #footer-bottom .col-3 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 100%;
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    #footer-bottom .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+} */
