@@ -1,0 +1,277 @@
+:root {
+    --background-color: #f5f6f8;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+}
+
+
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+    --bs-gutter-y: 1.5rem;
+    --bs-gutter-x: 1.6rem;
+}
+
+body {
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+.gy-4 {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+}
+
+@media (max-width: 1199px) {
+
+    section,
+    .section {
+        scroll-margin-top: 66px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+
+section,
+.section {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    scroll-margin-top: 88px;
+    overflow: clip;
+}
+
+.light-background {
+    --background-color: #f5f6f8;
+    --surface-color: #ffffff;
+}
+
+.section-title {
+    color: var(--heading-color);
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.section-title h2 {
+    color: var(--heading-color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: "Jost", sans-serif;
+}
+
+.section-title h2:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+
+.col-lg-4.aos-init.aos-animate {
+    height: 540.59px;
+    margin: 24px 0 0 0;
+    padding: 0 12px;
+    font-size: 16px;
+    color: #444444;
+}
+
+.pricing .pricing-item {
+    background-color: var(--surface-color);
+    box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--background-color);
+    border-top-color: var(--background-color);
+    padding: 60px 40px;
+    border-radius: 5px;
+    width: 336px;
+    height: 416.59px;
+}
+
+.pricing h3 {
+    color: var(--heading-color);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: "Jost", sans-serif;
+}
+
+.pricing h4 {
+    color: var(--accent-color);
+    font-size: 48px;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pricing h4 sup {
+    font-size: 28px;
+}
+
+.pricing h4 span {
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 18px;
+}
+
+.pricing ul {
+    margin: 0 0 16px;
+    padding: 20px 0;
+    list-style: none;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    text-align: left;
+    line-height: 20px;
+}
+
+.pricing ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.pricing ul i {
+    color: #059652;
+    font-size: 24px;
+    padding-right: 3px;
+}
+
+.pricing ul .na {
+    color: color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.pricing ul .na i {
+    color: color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.pricing ul .na span {
+    text-decoration: line-through;
+}
+
+.pricing .buy-btn {
+    color: var(--accent-color);
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 50px;
+    transition: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--heading-font);
+    transition: 0.3s;
+    border: 1px solid var(--accent-color);
+    text-decoration: none;
+}
+
+.pricing .buy-btn:hover {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.pricing .featured {
+    border-top-color: var(--accent-color);
+}
+
+.pricing .featured .buy-btn {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+@media (max-width: 992px) {
+    .pricing .box {
+        max-width: 60%;
+        margin: 0 auto 30px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .pricing .box {
+        max-width: 80%;
+        margin: 0 auto 30px auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .pricing .box {
+        max-width: 100%;
+        margin: 0 auto 30px auto;
+    }
+}
+
+.pricing {
+    animation: up-scroll-animation 1s ease-in-out;
+}
+
+@keyframes up-scroll-animation {
+    0% {
+        transform: translateY(50px);
+        /* 시작 위치: 아래에서 위로 50px 이동 */
+        opacity: 0;
+        /* 시작 시 투명도 */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* 최종 위치: 원래 위치로 복귀 */
+        opacity: 1;
+        /* 최종 시 투명도 */
+    }
+}

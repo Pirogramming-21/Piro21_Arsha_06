@@ -1,0 +1,132 @@
+.skills-container {
+    --bs-gutter-x: 6.5rem;
+    --bs-gutter-y: 0rem;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* 1);
+    padding-left: calc(var(--bs-gutter-x)* 1);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Setup row */
+.skills-row {
+    --bs-gutter-x: rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(2* var(--bs-gutter-x));
+    margin-left: calc(-8.5* var(--bs-gutter-x));
+    justify-content: space-between;
+}
+
+/* Setup col */
+.skills-col {
+    width: 48%;
+    align-items: center;
+}
+
+/* col-first */
+.skills .top-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .top-content img {
+    width: 90%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* col-second */
+.skills h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    line-height: 1.2;
+
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.skills-italic {
+    font-style: italic !important;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.skills .skills-content {
+    width: 100%;
+}
+
+.skills .skills-progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .skills-progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.skills .skills-progress .skill {
+    font-size: 12px;
+    color: var(--default-color);
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: var(--heading-font);
+}
+
+.skills .skills-progress-bar-wrap {
+    background: color-mix(in srgb, var(--heading-color), transparent 90%);
+    height: 10px;
+}
+
+.skills .skills-progress-bar {
+    height: 10px;
+    transition: 0.9s;
+    background-color: var(--heading-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    transition: var(--bs-progress-bar-transition);
+}
+
+/* animation */
+.skills-container {
+    animation: up-scroll-animation 4s ease-in-out;
+}
+
+@keyframes up-scroll-animation {
+    0% {
+        transform: translateY(50px);
+        /* �쒖옉 �꾩튂: �꾨옒�먯꽌 �꾨줈 50px �대룞 */
+        opacity: 0;
+        /* �쒖옉 �� �щ챸�� */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* 理쒖쥌 �꾩튂: �먮옒 �꾩튂濡� 蹂듦� */
+        opacity: 1;
+        /* 理쒖쥌 �� �щ챸�� */
+    }
+}
